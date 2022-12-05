@@ -7,6 +7,7 @@ import Toast, { PluginOptions } from 'vue-toastification'
 import '@unocss/reset/tailwind.css'
 import 'vue-toastification/dist/index.css'
 import 'uno.css'
+import './index.css'
 
 export const app = createApp(App)
 const head = createHead()

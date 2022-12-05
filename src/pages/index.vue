@@ -1,10 +1,13 @@
 <template>
-  <div>{{ val }}</div>
-  <test-component />
+  <div class="p-32">
+    <VSlider :value-formatter="formatter" />
+  </div>
 </template>
 
 <script setup lang="ts">
-const val = ref(0)
+const formatter = (val: number) => {
+  return val.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+}
 </script>
 
 <style scoped></style>

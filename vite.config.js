@@ -25,6 +25,8 @@ export default defineConfig({
       eslintrc: {
         enabled: true,
       },
+      dirs: ['./src/composables'],
+      vueTemplate: true,
     }),
     Unocss(),
   ],
@@ -33,10 +35,5 @@ export default defineConfig({
       { find: '@', replacement: path.resolve(__dirname, './src') },
       { find: '~', replacement: path.resolve(__dirname, './src') },
     ],
-  },
-  server: {
-    fs: {
-      allow: ['.'],
-    },
   },
 })

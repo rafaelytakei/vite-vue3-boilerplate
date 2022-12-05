@@ -3,7 +3,7 @@ import { defineConfig, presetIcons, presetUno, presetWebFonts } from 'unocss'
 export default defineConfig({
   theme: {
     colors: {
-      primary: '#032b86',
+      primary: '#119975',
       hoverprimary: '#0e3ba5',
       dark: '#02355e',
       light: '#c1e3ff',
@@ -17,6 +17,7 @@ export default defineConfig({
       '2xl': '1536px',
     },
   },
+  safelist: ['hidden'],
   presets: [
     presetUno(),
     presetIcons({
